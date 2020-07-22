@@ -1,0 +1,195 @@
+/* General Style */
+
+html, body {
+    direction: rtl;
+    font-size: x-large;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: midnightblue;
+}
+
+.page {
+    height: 100%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 15% 80% 5%;
+    grid-template-columns: repeat(12, 1fr)
+}
+
+@font-face {
+    font-family: Noot;
+    src: url(/assets/fonts/Noot_April13/Noot.otf);
+}
+
+@font-face {
+    font-family: Horev;
+    src: url(/assets/fonts/horev/horevclm-heavy-webfont.ttf);
+}
+
+header, footer {
+    grid-column: span 12;
+    /* border: 1px dashed black; */
+    color: oldlace;
+    text-align: center;
+    margin: 0;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header {
+    font-family: Noot;
+}
+
+/* left aside style */
+
+.left-aside {
+    grid-column: span 2;
+    /* border: 1px solid black; */
+    border-radius: 0px 40px 40px 0px;
+}
+
+.aside-banner {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    /* margin-right: 25%; */
+    /* padding: auto; */
+    border-radius: inherit;
+}
+
+/* main style */
+
+main {
+    grid-column: span 8;
+    /* border: 1px solid black; */
+    /* border: 1px dashed black; */
+    margin: 0;
+    padding: 0;
+}
+
+.welcome-video {
+    text-align: center;
+}
+
+.games-catalog {
+    border: 1px;
+    margin: 0;
+    padding: 20px;
+    height: 95%;
+    width: 97%;
+    text-align: center;
+}
+
+.game {
+    background-color: darkcyan;
+    border: 2px solid black;
+    border-radius: 25px;
+    text-align: center;
+    margin: 30px;
+    padding: 0;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 450px;
+    width: 200px;
+    display: inline-block;
+    box-sizing: border-box;
+    box-shadow: darkgray 0px 10px 20px;
+}
+
+.game>img {
+    height: 60%;
+    width: 100%;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.game>img:hover {
+    /* transition: border-radius 2s; */
+    transform: scale(1.5);
+    transition: all 2s;
+    border-radius: 25px;
+}
+
+.game>h4 {
+    height: 30%;
+    /* font-size: 1em; */
+    margin: 0em;
+    padding: 0px;
+    /* display: inline-block; */
+    /* width: 110%; */
+}
+
+.game>span {
+    height: 10%;
+    /* margin-top: 10px; */
+    /* padding: 10px; */
+    display: block;
+}
+
+/* right aside style */
+
+.right-aside {
+    grid-column: span 2;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 40px 0px 0px 40px;
+    
+}
+
+.right-aside>a {
+    display: block;
+    padding: 20px;
+    width: auto;
+    height: auto;
+    text-align: center;
+    margin: 2px;
+    color: lightgreen;
+}
+
+.right-aside>a:hover {
+    background-color: white;
+    border-radius: 25px;
+}
+
+.contact-form {
+    padding: 20px;
+    margin: 20px;
+    width: 500px;
+    height: 500px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+table {
+    color: white;
+    padding: 10px;
+    width: inherit;
+    height: inherit;
+}
+
+input, textarea {
+    width: inherit;
+}
+
+label {
+    text-align: right;
+}
+
+input[type=text], textarea, button, input[type=tel], input[type=email] {
+    width: 200px;
+    padding: 0%;
+}
+
+button {
+    text-align: center;
+    width: 48%;
+}
+
+caption {
+    font-size: 50px;
+    text-align: right;
+}
